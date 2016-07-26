@@ -28,24 +28,36 @@ public class HelloServlet2 extends HttpServlet {
 		out.println("<head>");
 		out.println("<title>HelloServlet2</title>");
 		out.println("</head>");
-		
 		out.println("<body>");
-		out.println("<a href=" + host + "directive.jsp> directive.jsp </a><br>");
-		out.println("<a href=" + host + "deptList.jsp> deptList.jsp </a><br>");
-		out.println("<a href=" + host + "directive.jsp> directive.jsp </a><br>");
-		out.println("<a href=" + host + "form.jsp> form.jsp </a><br>");
-		out.println("<a href=" + host + "Hello> Hello </a><br>");
+		
+		out.println("<h1>HTML & JSP</h1>");
 		out.println("<a href=" + host + "Hello.html> Hello.html </a><br>");
 		out.println("<a href=" + host + "Hello.jsp> Hello.jsp </a><br>");
-		out.println("<a href=" + host + "invalidCharset.jsp> invalidCharset.jsp </a><br>");
+		out.println("<br>");
+		out.println("<h1>JSP + DB</h1>");
+		out.println("<a href=" + host + "deptList.jsp> deptList.jsp </a><br>");
+		out.println("<br>");
+		out.println("<h1>Directive(지시어)</h1>");
+		out.println("<a href=" + host + "directive.jsp> directive.jsp </a><br>");
 		out.println("<a href=" + host + "page.jsp> page.jsp </a><br>");
-		out.println("<a href=" + host + "requestInfo.jsp> requestInfo.jsp </a><br>");
+		out.println("<br>");
+		out.println("<h1>Servlet</h1>");
+		out.println("<a href=" + host + "Hello> Hello </a><br>");
+		out.println("<br>");
+		out.println("<h1>Encoding</h1>");
 		out.println("<a href=" + host + "invalidCharset.jsp> invalidCharset.jsp </a><br>");
+		out.println("<a href=" + host + "invalidCharset.jsp> invalidCharset.jsp </a><br>");
+		out.println("<br>");
+		out.println("<h1>Decralation</h1>");
+		out.println("<a href=" + host + "decralation.jsp> decralation.jsp </a><br>");
 		out.println("<a href=" + host + "useDecl.jsp> useDecl.jsp </a><br>");
 		out.println("<a href=" + host + "useDecl2.jsp> useDecl2.jsp </a><br>");
+		out.println("<br>");
+		out.println("<h1>request 기본객체</h1>");
+		out.println("<a href=" + host + "requestInfo.jsp> requestInfo.jsp </a><br>");
+		out.println("<a href=" + host + "form.jsp> form.jsp </a><br>");
 		out.println("<a href=" + host + "viewParameter.jsp> viewParameter.jsp </a><br>");
-		
-		
+
 		out.println("</body>");
 		out.println("</html>");
 	}
