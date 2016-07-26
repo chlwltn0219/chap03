@@ -30,6 +30,9 @@ public class HelloServlet extends HttpServlet {
 		out.println("</head>");
 		out.println("<body>");
 		
+
+		out.println("<h1><a href='./Hello2'>Go to Index</a></h1>");
+		
 		for(int i=0; i<10; i++) {
 			out.println("#######################<br>");
 			out.println("HelloServlet.doGet()... " + i + "<br>");

@@ -30,11 +30,22 @@ public class HelloServlet2 extends HttpServlet {
 		out.println("</head>");
 		
 		out.println("<body>");
-		out.println("<a href=" + host + "Hello> Hello </a><br>");
-		out.println("<a href=" + host + "Hello.jsp> Hello.jsp </a><br>");
-		out.println("<a href=" + host + "Hello.html> Hello.html </a><br>");
+		out.println("<a href=" + host + "directive.jsp> directive.jsp </a><br>");
 		out.println("<a href=" + host + "deptList.jsp> deptList.jsp </a><br>");
 		out.println("<a href=" + host + "directive.jsp> directive.jsp </a><br>");
+		out.println("<a href=" + host + "form.jsp> form.jsp </a><br>");
+		out.println("<a href=" + host + "Hello> Hello </a><br>");
+		out.println("<a href=" + host + "Hello.html> Hello.html </a><br>");
+		out.println("<a href=" + host + "Hello.jsp> Hello.jsp </a><br>");
+		out.println("<a href=" + host + "invalidCharset.jsp> invalidCharset.jsp </a><br>");
+		out.println("<a href=" + host + "page.jsp> page.jsp </a><br>");
+		out.println("<a href=" + host + "requestInfo.jsp> requestInfo.jsp </a><br>");
+		out.println("<a href=" + host + "invalidCharset.jsp> invalidCharset.jsp </a><br>");
+		out.println("<a href=" + host + "useDecl.jsp> useDecl.jsp </a><br>");
+		out.println("<a href=" + host + "useDecl2.jsp> useDecl2.jsp </a><br>");
+		out.println("<a href=" + host + "viewParameter.jsp> viewParameter.jsp </a><br>");
+		
+		
 		out.println("</body>");
 		out.println("</html>");
 	}
