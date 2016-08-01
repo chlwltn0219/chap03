@@ -36,7 +36,7 @@ address 파라미터 = <%= request.getParameter("address") %>
 	while(paramEnum.hasMoreElements()) {
 		String name = (String)paramEnum.nextElement();
 %>
-		<%= name %>
+<%= name %>
 <%
 	}
 %>
