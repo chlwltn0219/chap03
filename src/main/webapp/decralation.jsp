@@ -20,6 +20,7 @@
 	int subtract(int a, int b) {
 		return a-b;
 	}
+	
 %>
 
 <h1>10 * 20 = <%= multuply(10, 20)  %></h1>

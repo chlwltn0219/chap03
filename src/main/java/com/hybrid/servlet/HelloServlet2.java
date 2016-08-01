@@ -57,7 +57,12 @@ public class HelloServlet2 extends HttpServlet {
 		out.println("<a href=" + host + "requestInfo.jsp> requestInfo.jsp </a><br>");
 		out.println("<a href=" + host + "form.jsp> form.jsp </a><br>");
 		out.println("<a href=" + host + "viewParameter.jsp> viewParameter.jsp </a><br>");
-
+		out.println("<a href=" + host + "request.jsp> form.jsp </a><br>");
+		out.println("<h1>redirect</h1>");
+		out.println("<a href=" + host + "redirect.jsp> redirect.jsp </a><br>");
+		out.println("<h1>sec/test/java/com.hybrid.http : java(Web Client)</h1>");
+		out.println("<h1>sec/main/resource/http : get.txt</h1>");
+		
 		out.println("</body>");
 		out.println("</html>");
 	}

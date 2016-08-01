@@ -1,0 +1,36 @@
+GET / HTTP/1.0
+
+telnet www.google.com 80
+GET / HTTP/1.1
+Host:www.google.com:80
+
+
+telnet localhost 8080
+GET /Hello.html HTTP/1.1
+Host:localhost:8080
+
+telnet localhost 8080
+GET /Hello.jsp HTTP/1.1
+Host:localhost:8080
+
+telnet localhost 8080
+GET /directive.jsp HTTP/1.1
+Host:localhost:8080
+
+GET /redirect.jsp HTTP/1.1
+Host:localhost:8080
+
+telnet localhost 8080
+GET /deptList.jsp HTTP/1.1
+Host:localhost:8080
+
+telnet localhost 8080
+GET /Hello.jsp?name=hong&addr=seoul HTTP/1.1
+Host:localhost:8080
+
+POST /Hello.jsp HTTP/1.1
+Host:localhost:8080
+Content-Length:27
+Content-Type:application/x-www-form-urlencoded
+
+name=hongkildong&addr=Busan
