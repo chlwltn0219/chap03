@@ -54,11 +54,11 @@ public class PrimaryController {
         button.setOnAction(e -> viewManager.switchView("secondary"));
         
         WebEngine engine = myweb.getEngine();
-        engine.load("http://localhost:8080/Hello");
-        url.setText("http://localhost:8080/Hello");
+        engine.load("http://localhost:8080/");
+        url.setText("http://localhost:8080/");
         
         home.setOnAction(event -> {
-        	engine.load("http://localhost:8080/Hello.jsp");
+        	engine.load("http://localhost:8080/");
         });
         
         url.setOnAction(event -> {
