@@ -7,10 +7,19 @@
 <head>
 <style type="text/css">
 	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
 		border: 1px solid red;
 	}
 	.center{
-		width: 45%;
+		width: 75%;
+		height: 300px;
+		float: left;
+	}
+	.left{
+		width: 25%;
+		height: 300px;
 		float: left;
 	}
 	.control_bar{
@@ -24,12 +33,12 @@
 
 <div>
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%<br>
-	this is top
+	this is top<br>
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%<br>
 </div>
-<div class="center">
+<div class="left">
 	%%%%%%%%%%%%%%%%<br>
-	this is left bar
+	this is left bar<br>
 	%%%%%%%%%%%%%%%%<br>
 </div>
 <div class="center">
