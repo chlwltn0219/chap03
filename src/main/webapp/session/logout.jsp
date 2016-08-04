@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>title.jsp</title>
+<title>logout.jsp</title>
 </head>
 <body>
-
-
-
+<%
+	session.invalidate();
+	response.sendRedirect("/");
+%>
 </body>
 </html>

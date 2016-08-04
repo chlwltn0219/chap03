@@ -12,35 +12,46 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloServlet
  */
-@WebServlet("/Hello")
+@WebServlet("/HelloServlet")
 public class HelloServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
        
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("#######################");
-		System.out.println("HelloServlet.doGet()...");
-		System.out.println("#######################");
-		
-		response.setContentType("text/html; charset=utf-8");
-		PrintWriter out = response.getWriter();
-		
-		out.println("<!DOCTYPE html>");
-		out.println("<html>");
-		out.println("<head>");
-		out.println("<title>HelloServelet</title>");
-		out.println("</head>");
-		out.println("<body>");
-		
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public HelloServlet() {
+        super();
+        System.out.println("#################");
+        System.out.println("HelloServlet()...");
+        System.out.println("#################");
+    }
 
-		out.println("<h1><a href='./Hello2'>Go to Index</a></h1>");
-		
-		for(int i=0; i<10; i++) {
-			out.println("#######################<br>");
-			out.println("HelloServlet.doGet()... " + i + "<br>");
-			out.println("#######################<br>");
-		}
-		
-		out.println("</body>");
-		out.println("</html>");
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("#################");
+        System.out.println("doGet()...");
+        System.out.println("#################");
+        
+        response.setContentType("text/html; charset=utf-8");
+        PrintWriter out = response.getWriter();
+        
+        out.println("Remote Addr = " + request.getRemoteAddr());
+        for(int i=0; i<10; i++) {
+        	out.println("<h1>HelloServlet 실행 확인</h1>");
+        }
+        
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("#################");
+        System.out.println("doPost()...");
+        System.out.println("#################");
+		doGet(request, response);
 	}
 
 }

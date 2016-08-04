@@ -12,25 +12,15 @@
 <title>deptlist.jsp</title>
 </head>
 <body>
-<h1>DeptList</h1>
-<%
-	Cookie[] cookies = request.getCookies();
-	
-	boolean loginStatus = false;
-	
-	if(cookies != null)
-	for (Cookie c : cookies) {
-		String cname = c.getName();
-		if(cname.equals("LOGIN")) {
-			loginStatus = true;
-		}
-	}
-	
-	if (loginStatus != true) {
-		response.sendRedirect("/cookie/loginForm.jsp");
-		return ;
-	}
+<h1>Dept</h1>
 
+<%
+	String login = (String) session.getAttribute("LOGIN");
+
+	if(login == null) {
+		response.sendRedirect("/session/loginForm.jsp");
+		return;
+	}
 %>
 
 <%
@@ -89,7 +79,8 @@
 	System.out.println("============================================");
 %>
 
-<a href="logout.jsp">로그아웃</a>
+<a href="/session/logout.jsp">로그아웃</a>
+
 
 </body>
 </html>

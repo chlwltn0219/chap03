@@ -9,14 +9,19 @@
 </head>
 <body>
 
-<h1>Login</h1>
-
-<form action="loginProcess.jsp" method="post">
-	<label>ID : <input type="text" name="id"/></label> <br>
-	<label>PW : <input type="text" name="pw"/></label> <br>
+<form action="/session/loginProcess.jsp" method="post">
+	<div>
+		<label for="id">ID : </label>
+		<input id="id" type="text" name="id" />
+	</div>
+	<div>
+		<label for="pw">PW : </label>
+		<input id="pw" type="password" name="pw" />
+	</div>
 	<sec:csrfInput/>
 	<input type="submit" value="login">
 </form>
+
 
 </body>
 </html>

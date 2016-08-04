@@ -1,4 +1,3 @@
-<%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,12 +7,8 @@
 <title>Hello.jsp</title>
 </head>
 <body>
-
-<h1>Hello JSP !!!</h1>
-현재시간 : <%= new Date() %> <br>
-name = <%= request.getParameter("name") %><br>
-addr = <%= request.getParameter("addr") %><br>
-HTTP METHOD <%= request.getMethod() %>
-
+<% for(int i=0; i<10; i++) { %>
+<h1>Hello.jsp 작동 확인 i = <%= i %></h1>
+<% } %>
 </body>
 </html>

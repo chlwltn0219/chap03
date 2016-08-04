@@ -54,6 +54,12 @@ dependencies {
 	 *	8. SiteMesh 설정
 	 */
 	compile group: 'org.sitemesh', name: 'sitemesh', version: '3.0.1'
+	/*
+	 *	9. Spring Security 설정
+	 */
+	compile('org.springframework.boot:spring-boot-starter-security')
+	compile group: 'org.springframework.security', name: 'spring-security-taglibs', version: '4.0.4.RELEASE'
+	 
 }
 
 
