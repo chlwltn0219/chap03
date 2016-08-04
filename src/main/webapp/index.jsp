@@ -44,6 +44,12 @@
 			<li><a href="/chap06/arithmeticTest.jsp">arithmeticTest.jsp</a></li>
 		</ol>
 	</li>
+	<li>
+		<h3>chap08</h3>
+		<ol>
+			<li><a href="/cookie/dept.jsp">Cookie Login</a></li>
+		</ol>
+	</li>
 </ol>
 
 </body>

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<table width="400" border="1" cellpadding="0" cellspacing="0">
+<table style="width: 400; border: 1px solid black; cellpadding: 0; cellspacing: 0">
 <tr>
 	<td colspan="2">
 		<jsp:include page="top.jsp" flush="false" />
