@@ -2,6 +2,8 @@ package com.hybrid.fx.actions;
 
 import com.gluonhq.particle.annotation.ParticleActions;
 import com.gluonhq.particle.application.ParticleApplication;
+import com.hybrid.fx.MainApplication;
+
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
@@ -16,6 +18,7 @@ public class MenuActions {
 
     @ActionProxy(text="Exit", accelerator="alt+F4")
     private void exit() {
+    	MainApplication.ctx.close();
         app.exit();
     }
     

@@ -4,11 +4,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>title.jsp</title>
+<title>requestScope.jsp</title>
 </head>
 <body>
 
+<%
+	request.setAttribute("xxx", "Hello EL!");
+%>
 
+<%= request.getAttribute("xxx") %>
+<hr>
+${ requestScope.xxx }
+<hr>
+${ xxx }
+<hr>
 
 </body>
 </html>

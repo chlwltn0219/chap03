@@ -17,7 +17,7 @@
 	ApplicationContext ctx = WebApplicationContextUtils.getRequiredWebApplicationContext(getServletContext());
 	DeptMapper mapper = ctx.getBean(DeptMapper.class);
 	
-	List<Dept> depts = mapper.readAll();
+	List<Dept> depts = mapper.SelectAll();
 	
 	for(Dept dept : depts) {
 		System.out.println(dept.getDeptno() + " " + dept.getDname() + " " + dept.getLoc());

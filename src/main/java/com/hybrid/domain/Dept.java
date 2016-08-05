@@ -15,7 +15,7 @@ public class Dept {
 	
 	@Override
 	public String toString() {
-		return String.format("%10d, %20s, %20s", deptno, dname, loc);
+		return String.format("["+"%10d, %20s, %20s"+"]", deptno, dname, loc);
 	}
 	
 	public int getDeptno() {
